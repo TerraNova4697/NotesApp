@@ -8,9 +8,12 @@ function App() {
     return (
         <div>
             <Header />
-            {notes.map(note => (
-                <Note key={note.key} tite={note.title} content ={note.content}/>
-            ))}
+            <div className="notes-container">
+                {notes.map(note => (
+                    <Note key={note.key} tite={note.title} content ={note.content}/>
+                ))}
+            </div>
+            
             <Footer/>
         </div>
         
